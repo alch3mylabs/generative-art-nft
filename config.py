@@ -26,7 +26,7 @@ CONFIG = [
         'name': 'background',
         'directory': 'Background',
         'required': True,
-        'rarity_weights': None,
+        'rarity_weights': 'random',
     },
     {
         'id': 2,
@@ -76,5 +76,7 @@ CONFIG = [
         'directory': 'Wristband',
         'required': False,
         'rarity_weights': None,
+        'filter': {5: [True, False]}
     },
+    #this means wristband will only show up for non-shirt wearers
 ]
